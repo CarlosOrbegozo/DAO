@@ -3,6 +3,9 @@ package edu.upc.eetac.dsa.util;
 
 import java.lang.reflect.Field;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
 public class ObjectHelper {
     public static String[] getFields(Object entity) {
 
@@ -20,7 +23,7 @@ public class ObjectHelper {
     }
 
 
-    public static void setter(Object entity, String property, Object value) {
+    public static void setter(Object entity, String property, Object value) throws InvocationTargetException, IllegalAccessException {
         // Method // invoke
         Object result = null;
         Class theClass = entity.getClass();
@@ -28,8 +31,8 @@ public class ObjectHelper {
 
         for(Method method : methods){
             if(isSetter(method)){
-                if(method.contains(property))
-                    method.invoke(value);
+                if(method.getName().contains(property))
+                    method.invoke(entity,value);
             }
 
         }
@@ -37,7 +40,7 @@ public class ObjectHelper {
 
     }
 
-    public static Object getter(Object entity, String property) {
+    public static Object getter(Object entity, String property) throws InvocationTargetException, IllegalAccessException {
         // Method // invoke
         Object result = null;
         Class theClass = entity.getClass();
@@ -45,8 +48,8 @@ public class ObjectHelper {
 
         for(Method method : methods){
             if(isGetter(method)){
-                if(method.contains(property))
-                    result = method.invoke();
+                if(method.getName().contains(property))
+                    result =method.invoke(entity);
             }
 
         }
