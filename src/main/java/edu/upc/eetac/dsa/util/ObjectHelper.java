@@ -37,7 +37,6 @@ public class ObjectHelper {
 
         }
 
-
     }
 
     public static Object getter(Object entity, String property) throws InvocationTargetException, IllegalAccessException {
@@ -51,7 +50,6 @@ public class ObjectHelper {
                 if(method.getName().contains(property))
                     result =method.invoke(entity);
             }
-
         }
 
         return result;
@@ -60,7 +58,7 @@ public class ObjectHelper {
     public static boolean isGetter(Method method){
         if(!method.getName().startsWith("get"))      return false;
         if(method.getParameterTypes().length != 0)   return false;
-        if(void.class.equals(method.getReturnType()) return false;
+        if(void.class.equals(method.getReturnType())) return false;
         return true;
     }
 

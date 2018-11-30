@@ -12,4 +12,6 @@ public interface IEmployeeDAO {
     public void deleteEmployee(int employeeID);
     public List<Employee> getEmployees();
     public List <Employee> getEmployeeByDept(int deptId);
+
+    public void clear();
 }

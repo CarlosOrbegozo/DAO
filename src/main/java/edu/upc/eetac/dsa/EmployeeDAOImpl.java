@@ -7,6 +7,22 @@ import java.util.List;
 
 public class EmployeeDAOImpl implements IEmployeeDAO {
 
+    private static IEmployeeDAO instance;
+
+    private EmployeeDAOImpl(){
+
+    }
+
+    public static IEmployeeDAO getInstance(){
+        if(instance==null){
+            instance = new EmployeeDAOImpl();
+        }
+        return instance;
+    }
+
+    public void clear(){
+        instance = null;
+    }
 
     public int addEmployee(String name, String surname, double salary) {
         Session session = null;
@@ -70,7 +86,7 @@ public class EmployeeDAOImpl implements IEmployeeDAO {
         Session session = null;
         try {
             session = FactorySession.openSession();
-            session.delete(Employee.class);
+            session.delete(Employee.class, employeeID);
         }
         catch (Exception e) {
             // LOG

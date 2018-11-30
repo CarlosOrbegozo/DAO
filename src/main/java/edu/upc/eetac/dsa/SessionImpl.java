@@ -3,8 +3,10 @@ package edu.upc.eetac.dsa;
 import edu.upc.eetac.dsa.util.ObjectHelper;
 import edu.upc.eetac.dsa.util.QueryHelper;
 
+import java.lang.reflect.InvocationTargetException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
@@ -32,27 +34,96 @@ public class SessionImpl implements Session {
                 pstm.setObject(i++, ObjectHelper.getter(entity, field));
             }
 
-            pstm.executeQuery();
+            pstm.executeUpdate();
 
         } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
 
     }
 
     public void close() {
-
+        try {
+            this.conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     public Object get(Class theClass, int ID) {
-        return null;
+        String selectQuery = QueryHelper.createQuerySELECT(theClass);
+
+        ResultSet rs = null;
+        PreparedStatement pstm = null;
+
+        try {
+            pstm = conn.prepareStatement(selectQuery);
+            pstm.setObject(1, 0);
+            int i = 2;
+
+            for (String field: ObjectHelper.getFields(theClass)) {
+                pstm.setObject(i++, ObjectHelper.getter(theClass, field));
+            }
+
+            pstm.setObject(i, ID);
+
+            rs = pstm.executeQuery();
+
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
+
+        return rs; //Por ver
     }
 
     public void update(Object object) {
+        /*String updateQuery = QueryHelper.createQueryUPDATE(object);
 
+        PreparedStatement pstm = null;
+
+        try {
+            pstm = conn.prepareStatement(updateQuery);
+            pstm.setObject(1,0);
+            int i = 2;
+
+            ObjectHelper.setter(object, property, value) //REVISAR!!!
+
+            for(String field: ObjectHelper.getFields(object)){
+                pstm.setObject(i++, );
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }*/
     }
 
-    public void delete(Object object) {
+    public void delete(Object object, int ID) {
+        String deleteQuery = QueryHelper.createQueryDELETE(object);
+
+        PreparedStatement pstm = null;
+
+        try {
+            pstm = conn.prepareStatement(deleteQuery);
+            pstm.setObject(1, ID);
+
+            pstm.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
     }
 

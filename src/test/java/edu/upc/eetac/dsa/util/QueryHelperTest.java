@@ -8,6 +8,7 @@ import org.junit.Test;
 
 public class QueryHelperTest {
 
+    private IEmployeeDAO dao;
 
     @Test
     public void testQueryINSERT() {
@@ -32,5 +33,19 @@ public class QueryHelperTest {
         Assert.assertEquals("SELECT * FROM Deparment WHERE ID = ?",
                 QueryHelper.createQuerySELECT(new Deparment("ENTEL", "ENGINYERIA TELEMÀTICA")));
     }
+
+    @Test
+    public void insertEmployeeDB(){
+        this.dao = EmployeeDAOImpl.getInstance();
+        this.dao.addEmployee("Paco","Paco", 2300);
+        this.dao.clear();
+    }
+
+    /*@Test
+    public void deleteEmployeeDB(){
+        this.dao = EmployeeDAOImpl.getInstance();
+        this.dao.deleteEmployee(1);
+        this.dao.clear();
+    }*/
 
 }
