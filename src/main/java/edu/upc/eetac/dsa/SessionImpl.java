@@ -17,6 +17,7 @@ import java.util.List;
 
 public class SessionImpl implements Session {
     private final Connection conn;
+    public static int id = 0;
 
     public SessionImpl(Connection conn) {
         this.conn = conn;
@@ -30,7 +31,7 @@ public class SessionImpl implements Session {
 
         try {
             pstm = conn.prepareStatement(insertQuery);
-            pstm.setObject(1, 0);
+            pstm.setObject(1,++id);
             int i = 2;
 
             for (String field: ObjectHelper.getFields(entity)) {
@@ -73,15 +74,14 @@ public class SessionImpl implements Session {
 
         try {
             pstm = conn.prepareStatement(selectQuery);
-            pstm.setObject(1, ID);
-
+            pstm.setObject(1,ID);
             rs = pstm.executeQuery();
 
             while(rs.next()){
                 Field[] fields = theClass.getDeclaredFields();
                 rs.getString(1);
                 for (int i = 0; i<fields.length; i++){
-                    ObjectHelper.setter(entity, fields[i].getName(), rs.getObject(i +1));
+                    ObjectHelper.setter(entity, fields[i].getName(), rs.getObject(i + 2));
                 }
 
             }
