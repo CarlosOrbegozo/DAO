@@ -1,6 +1,8 @@
 package edu.upc.eetac.dsa.util;
 
 
+import java.beans.IntrospectionException;
+import java.beans.PropertyDescriptor;
 import java.lang.reflect.Field;
 
 import java.lang.reflect.InvocationTargetException;
@@ -47,7 +49,7 @@ public class ObjectHelper {
 
         for(Method method : methods){
             if(isGetter(method)){
-                if(method.getName().contains(property))
+                if(method.getName().toLowerCase().startsWith(property, 3))
                     result =method.invoke(entity);
             }
         }

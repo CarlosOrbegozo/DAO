@@ -55,14 +55,14 @@ public class SessionImpl implements Session {
     }
 
     public Object get(Class theClass, int ID) {
-        String selectQuery = QueryHelper.createQuerySELECT(theClass);
+        String selectQuery = QueryHelper.createQuerySELECT2(theClass);
 
         ResultSet rs = null;
         PreparedStatement pstm = null;
 
         try {
             pstm = conn.prepareStatement(selectQuery);
-            pstm.setObject(1, 0);
+            pstm.setObject(1, ID);
             int i = 2;
 
             for (String field: ObjectHelper.getFields(theClass)) {

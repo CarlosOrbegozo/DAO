@@ -21,7 +21,7 @@ public class QueryHelper {
             sb.append(", ?");
         }
 
-        sb.append(");");
+        sb.append(")");
 
         return sb.toString();
     }
@@ -29,6 +29,14 @@ public class QueryHelper {
     public static String createQuerySELECT(Object entity) {
         StringBuffer sb = new StringBuffer();
         sb.append("SELECT * FROM ").append(entity.getClass().getSimpleName());
+        sb.append(" WHERE ID = ?");
+
+        return sb.toString();
+    }
+
+    public static String createQuerySELECT2(Class theClass) {
+        StringBuffer sb = new StringBuffer();
+        sb.append("SELECT * FROM ").append(theClass.getSimpleName());
         sb.append(" WHERE ID = ?");
 
         return sb.toString();

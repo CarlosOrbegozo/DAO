@@ -47,5 +47,4 @@ public class QueryHelperTest {
         this.dao.deleteEmployee(1);
         this.dao.clear();
     }*/
-
 }
