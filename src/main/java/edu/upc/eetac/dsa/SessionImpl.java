@@ -11,13 +11,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 
 public class SessionImpl implements Session {
     private final Connection conn;
-    public static int id = 0;
 
     public SessionImpl(Connection conn) {
         this.conn = conn;
@@ -31,7 +29,7 @@ public class SessionImpl implements Session {
 
         try {
             pstm = conn.prepareStatement(insertQuery);
-            pstm.setObject(1,++id);
+            pstm.setObject(1,0);
             int i = 2;
 
             for (String field: ObjectHelper.getFields(entity)) {
@@ -95,24 +93,25 @@ public class SessionImpl implements Session {
             e.printStackTrace();
         }
 
-        return entity; //Por ver
+        return entity;
     }
 
-    public void update(Object object) {
-        /*String updateQuery = QueryHelper.createQueryUPDATE(object);
+    public void update(Object object, int ID) {
+        String updateQuery = QueryHelper.createQueryUPDATE(object);
 
         PreparedStatement pstm = null;
 
         try {
             pstm = conn.prepareStatement(updateQuery);
-            pstm.setObject(1,0);
-            int i = 2;
-
-            ObjectHelper.setter(object, property, value) //REVISAR!!!
+            int i = 1;
 
             for(String field: ObjectHelper.getFields(object)){
-                pstm.setObject(i++, );
+                pstm.setObject(i++, ObjectHelper.getter(object, field));
             }
+
+            pstm.setObject(i,ID);
+
+            pstm.executeUpdate();
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -120,7 +119,7 @@ public class SessionImpl implements Session {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
             e.printStackTrace();
-        }*/
+        }
     }
 
     public void delete(Object object, int ID) {
@@ -141,7 +140,48 @@ public class SessionImpl implements Session {
     }
 
     public List<Object> findAll(Class theClass) {
-        return null;
+        String findAllQuery = QueryHelper.findAllQuery(theClass);
+
+        Object entity = null;
+        List<Object> listOfObjects = new ArrayList<>();
+
+        try {
+            entity = theClass.newInstance();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+        ResultSet rs = null;
+        PreparedStatement pstm = null;
+
+        try {
+            pstm = conn.prepareStatement(findAllQuery);
+            rs = pstm.executeQuery();
+
+            while(rs.next()){
+                Field[] fields = theClass.getDeclaredFields();
+                rs.getString(1);
+                for (int i = 0; i<fields.length; i++){
+                    ObjectHelper.setter(entity, fields[i].getName(), rs.getObject(i + 2));
+                }
+
+                listOfObjects.add(entity);
+
+                entity = theClass.newInstance();
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        }
+
+        return listOfObjects;
     }
 
     public List<Object> findAll(Class theClass, HashMap params) {

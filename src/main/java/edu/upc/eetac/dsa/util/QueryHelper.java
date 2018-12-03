@@ -60,8 +60,16 @@ public class QueryHelper {
             sb.append(" ").append(field);
             sb.append(" = ?,");
         }
+        sb.delete(sb.length() -1, sb.length());
 
         sb.append(" WHERE ID = ?");
+
+        return sb.toString();
+    }
+
+    public static String findAllQuery(Class theClass) {
+        StringBuffer sb = new StringBuffer();
+        sb.append("SELECT * FROM ").append(theClass.getSimpleName());
 
         return sb.toString();
     }

@@ -2,13 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0747240-3e4e-45bf-b624-d6b0fa60f8a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/DeleteEmployeeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/InsertEmployeeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/SelectAllEmployeesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/SelectEmployeeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/UpdateEmployeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/EmployeeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/EmployeeDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/Session.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/SessionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/SessionImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/model/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/util/ObjectHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/util/ObjectHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/util/QueryHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/util/QueryHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/QueryHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/QueryHelperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/eetac/dsa/EmployeeDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/eetac/dsa/EmployeeDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/eetac/dsa/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/eetac/dsa/Session.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/eetac/dsa/SessionImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/eetac/dsa/SessionImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/eetac/dsa/util/QueryHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/eetac/dsa/util/QueryHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/upc/eetac/dsa/QueryHelperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/upc/eetac/dsa/QueryHelperTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,74 +42,43 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="23" />
-          <entry key="java" value="16" />
+          <entry key="class" value="27" />
+          <entry key="java" value="28" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="23" />
-          <entry key="JAVA" value="16" />
+          <entry key="CLASS" value="27" />
+          <entry key="JAVA" value="28" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2999" />
+          <entry key="dummy" value="4" />
+          <entry key="java" value="3997" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2999" />
+          <entry key="JAVA" value="3997" />
+          <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/model/Deparment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/EmployeeDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
-              <folding>
-                <element signature="e#463#464#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/util/QueryHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/SessionImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="251">
+              <caret line="170" selection-start-line="170" selection-end-line="170" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#382#383#0" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#3294#3295#0" expanded="true" />
-                <element signature="e#3321#3322#0" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
+                <element signature="e#626#627#0" expanded="true" />
                 <element signature="e#3388#3389#0" expanded="true" />
                 <element signature="e#3415#3416#0" expanded="true" />
                 <element signature="e#3494#3495#0" expanded="true" />
@@ -110,38 +89,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/util/ObjectHelper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/FactorySession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="253">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/model/Employee.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/SelectAllEmployeesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+            <state relative-caret-position="285">
+              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
               <folding>
-                <element signature="e#370#371#0" expanded="true" />
-                <element signature="e#402#403#0" expanded="true" />
-                <element signature="e#448#449#0" expanded="true" />
-                <element signature="e#486#487#0" expanded="true" />
-                <element signature="e#566#567#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/QueryHelperTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/DeleteEmployeeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="53" column="49" lean-forward="true" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+            <state relative-caret-position="210">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/util/QueryHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="565">
+              <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/Session.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -149,11 +142,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/IEmployeeDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="180">
+              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/EmployeeDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="111" selection-start-line="111" selection-end-line="111" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/QueryHelperTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -176,13 +187,18 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/IEmployeeDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/CRUDTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/FactorySession.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/Session.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/util/QueryHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/SessionImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/model/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/util/ObjectHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/Session.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/EmployeeDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/InsertEmployeeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/DeleteEmployeeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/SelectEmployeeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/UpdateEmployeeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/util/QueryHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/QueryHelperTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/SelectAllEmployeesTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/SessionImpl.java" />
       </list>
     </option>
   </component>
@@ -282,7 +298,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543842547426" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543861583251" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -309,7 +325,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.QueryHelperTest">
+  <component name="RunManager" selected="JUnit.SelectAllEmployeesTest">
     <configuration name="CRUDTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DAO" />
       <extension name="coverage">
@@ -338,12 +354,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SelectAllEmployeesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DAO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.upc.eetac.dsa.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.upc.eetac.dsa.util" />
+      <option name="MAIN_CLASS_NAME" value="edu.upc.eetac.dsa.util.SelectAllEmployeesTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectEmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DAO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.upc.eetac.dsa.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.upc.eetac.dsa.util" />
+      <option name="MAIN_CLASS_NAME" value="edu.upc.eetac.dsa.util.SelectEmployeeTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.QueryHelperTest" />
       <item itemvalue="JUnit.CRUDTest" />
+      <item itemvalue="JUnit.SelectEmployeeTest" />
+      <item itemvalue="JUnit.SelectAllEmployeesTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SelectAllEmployeesTest" />
+        <item itemvalue="JUnit.SelectEmployeeTest" />
         <item itemvalue="JUnit.QueryHelperTest" />
         <item itemvalue="JUnit.CRUDTest" />
       </list>
@@ -363,47 +411,46 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="QueryHelperTest - 2018.12.03 at 13h 58m 03s.xml">
-      <configuration name="QueryHelperTest" configurationId="JUnit" />
+    <history-entry file="SelectAllEmployeesTest - 2018.12.03 at 18h 49m 42s.xml">
+      <configuration name="SelectAllEmployeesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QueryHelperTest - 2018.12.03 at 13h 58m 53s.xml">
-      <configuration name="QueryHelperTest" configurationId="JUnit" />
+    <history-entry file="SelectAllEmployeesTest - 2018.12.03 at 18h 50m 39s.xml">
+      <configuration name="SelectAllEmployeesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QueryHelperTest - 2018.12.03 at 13h 59m 46s.xml">
-      <configuration name="QueryHelperTest" configurationId="JUnit" />
+    <history-entry file="SelectAllEmployeesTest - 2018.12.03 at 19h 03m 19s.xml">
+      <configuration name="SelectAllEmployeesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QueryHelperTest - 2018.12.03 at 14h 00m 10s.xml">
-      <configuration name="QueryHelperTest" configurationId="JUnit" />
+    <history-entry file="SelectAllEmployeesTest - 2018.12.03 at 19h 04m 41s.xml">
+      <configuration name="SelectAllEmployeesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QueryHelperTest - 2018.12.03 at 14h 00m 33s.xml">
-      <configuration name="QueryHelperTest" configurationId="JUnit" />
+    <history-entry file="SelectAllEmployeesTest - 2018.12.03 at 19h 05m 17s.xml">
+      <configuration name="SelectAllEmployeesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QueryHelperTest - 2018.12.03 at 14h 04m 32s.xml">
-      <configuration name="QueryHelperTest" configurationId="JUnit" />
+    <history-entry file="SelectAllEmployeesTest - 2018.12.03 at 19h 07m 14s.xml">
+      <configuration name="SelectAllEmployeesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QueryHelperTest - 2018.12.03 at 14h 05m 18s.xml">
-      <configuration name="QueryHelperTest" configurationId="JUnit" />
+    <history-entry file="SelectAllEmployeesTest - 2018.12.03 at 19h 20m 41s.xml">
+      <configuration name="SelectAllEmployeesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QueryHelperTest - 2018.12.03 at 14h 06m 00s.xml">
-      <configuration name="QueryHelperTest" configurationId="JUnit" />
+    <history-entry file="SelectAllEmployeesTest - 2018.12.03 at 19h 25m 22s.xml">
+      <configuration name="SelectAllEmployeesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QueryHelperTest - 2018.12.03 at 14h 07m 31s.xml">
-      <configuration name="QueryHelperTest" configurationId="JUnit" />
+    <history-entry file="SelectAllEmployeesTest - 2018.12.03 at 19h 26m 12s.xml">
+      <configuration name="SelectAllEmployeesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QueryHelperTest - 2018.12.03 at 14h 08m 01s.xml">
-      <configuration name="QueryHelperTest" configurationId="JUnit" />
+    <history-entry file="SelectAllEmployeesTest - 2018.12.03 at 19h 26m 28s.xml">
+      <configuration name="SelectAllEmployeesTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="830" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24892704" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24892704" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" weight="0.3292683" />
@@ -411,8 +458,8 @@
       <window_info anchor="bottom" id="Messages" weight="0.3292683" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3292683" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39972898" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39972898" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -428,18 +475,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/util/ObjectHelper.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/CRUDTest.java">
@@ -469,46 +504,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Proyecto/MYSQL/mysql-connector-java-8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/ClientPreparedStatement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="781" selection-start-line="781" selection-end-line="781" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/FactorySession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../Proyecto/MYSQL/mysql-connector-java-8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/protocol/a/result/ByteArrayRow.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Proyecto/MYSQL/mysql-connector-java-8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/ConnectionImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="164" selection-start-line="164" selection-end-line="164" />
-          <folding>
-            <element signature="e#6661#6662#0" expanded="true" />
-            <element signature="e#6740#6741#0" expanded="true" />
-            <element signature="e#7036#7037#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -548,34 +550,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/QueryHelperTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/model/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="53" column="49" lean-forward="true" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+        <state relative-caret-position="210">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Proyecto/MYSQL/mysql-connector-java-8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/ConnectionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="1263" selection-start-line="1263" selection-end-line="1263" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Proyecto/MYSQL/mysql-connector-java-8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/ClientPreparedStatement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="1517" selection-start-line="1517" selection-end-line="1517" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/InsertEmployeeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Proyecto/MYSQL/mysql-connector-java-8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/result/ResultSetImpl.class">
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/UpdateEmployeeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="1187" selection-start-line="1187" selection-end-line="1187" />
+        <state relative-caret-position="240">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/util/ObjectHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/SelectEmployeeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/QueryHelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/util/QueryHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+        <state relative-caret-position="565">
+          <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Proyecto/MYSQL/mysql-connector-java-8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/result/ResultSetImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="1746" selection-start-line="1746" selection-end-line="1746" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/IEmployeeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="180">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -584,50 +656,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/EmployeeDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="278">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/DeleteEmployeeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/upc/eetac/dsa/util/SelectAllEmployeesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/FactorySession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/SessionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="251">
+          <caret line="170" selection-start-line="170" selection-end-line="170" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#3294#3295#0" expanded="true" />
-            <element signature="e#3321#3322#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
             <element signature="e#3388#3389#0" expanded="true" />
             <element signature="e#3415#3416#0" expanded="true" />
             <element signature="e#3494#3495#0" expanded="true" />
             <element signature="e#3521#3522#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/util/ObjectHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/upc/eetac/dsa/model/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-          <folding>
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
           </folding>
         </state>
       </provider>
