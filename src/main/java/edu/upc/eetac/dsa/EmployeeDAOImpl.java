@@ -82,11 +82,11 @@ public class EmployeeDAOImpl implements IEmployeeDAO {
 
 
     public void deleteEmployee(int employeeID) {
-        Employee employee = this.getEmployee(employeeID);
+        Employee employee = new Employee();
         Session session = null;
         try {
             session = FactorySession.openSession();
-            session.delete(Employee.class, employeeID);
+            session.delete(employee, employeeID);
         }
         catch (Exception e) {
             // LOG

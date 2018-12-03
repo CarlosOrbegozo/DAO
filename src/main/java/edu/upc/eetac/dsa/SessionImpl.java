@@ -3,7 +3,10 @@ package edu.upc.eetac.dsa;
 import edu.upc.eetac.dsa.util.ObjectHelper;
 import edu.upc.eetac.dsa.util.QueryHelper;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -57,21 +60,31 @@ public class SessionImpl implements Session {
     public Object get(Class theClass, int ID) {
         String selectQuery = QueryHelper.createQuerySELECT2(theClass);
 
+        Object entity = null;
+        try {
+            entity = theClass.newInstance();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
         ResultSet rs = null;
         PreparedStatement pstm = null;
 
         try {
             pstm = conn.prepareStatement(selectQuery);
             pstm.setObject(1, ID);
-            int i = 2;
-
-            for (String field: ObjectHelper.getFields(theClass)) {
-                pstm.setObject(i++, ObjectHelper.getter(theClass, field));
-            }
-
-            pstm.setObject(i, ID);
 
             rs = pstm.executeQuery();
+
+            while(rs.next()){
+                Field[] fields = theClass.getDeclaredFields();
+                rs.getString(1);
+                for (int i = 0; i<fields.length; i++){
+                    ObjectHelper.setter(entity, fields[i].getName(), rs.getObject(i +1));
+                }
+
+            }
 
 
         } catch (SQLException e) {
@@ -82,7 +95,7 @@ public class SessionImpl implements Session {
             e.printStackTrace();
         }
 
-        return rs; //Por ver
+        return entity; //Por ver
     }
 
     public void update(Object object) {

@@ -34,17 +34,24 @@ public class QueryHelperTest {
                 QueryHelper.createQuerySELECT(new Deparment("ENTEL", "ENGINYERIA TELEMÀTICA")));
     }
 
-    @Test
+    /*@Test
     public void insertEmployeeDB(){
         this.dao = EmployeeDAOImpl.getInstance();
         this.dao.addEmployee("Paco","Paco", 2300);
         this.dao.clear();
-    }
+    }*/
 
     /*@Test
     public void deleteEmployeeDB(){
         this.dao = EmployeeDAOImpl.getInstance();
-        this.dao.deleteEmployee(1);
+        this.dao.deleteEmployee( 2);
         this.dao.clear();
     }*/
+
+    @Test
+    public void selectEmployeeDB(){
+        this.dao = EmployeeDAOImpl.getInstance();
+        Assert.assertEquals("Paco",this.dao.getEmployee(3).getName());
+    }
+
 }

@@ -12,6 +12,10 @@ public class Employee {
         this.salary = salary;
     }
 
+    public Employee(){
+
+    }
+
     public void setName(String name) {
         this.name = name;
     }

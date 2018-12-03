@@ -33,7 +33,7 @@ public class ObjectHelper {
 
         for(Method method : methods){
             if(isSetter(method)){
-                if(method.getName().contains(property))
+                if(method.getName().toLowerCase().startsWith(property, 3))
                     method.invoke(entity,value);
             }
 
