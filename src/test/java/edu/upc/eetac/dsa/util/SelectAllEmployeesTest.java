@@ -17,8 +17,8 @@ public class SelectAllEmployeesTest {
         List<Employee> list = this.dao.getEmployees();
         Assert.assertEquals("Paco", list.get(0).getName());
         Assert.assertEquals("Pepe", list.get(1).getName());
-        /*Assert.assertEquals("Paco", list.get(2).getName());
-        Assert.assertEquals("Paco", list.get(3).getName());*/
+        Assert.assertEquals("Paco", list.get(2).getName());
+        Assert.assertEquals("Paco", list.get(3).getName());
         this.dao.clear();
     }
 }

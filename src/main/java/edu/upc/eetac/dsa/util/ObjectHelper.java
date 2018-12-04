@@ -30,6 +30,7 @@ public class ObjectHelper {
         Object result = null;
         Class theClass = entity.getClass();
         Method[] methods = theClass.getMethods();
+        //Method setter = theClass.getMethod(property, String.class);
 
         for(Method method : methods){
             if(isSetter(method)){
@@ -41,11 +42,23 @@ public class ObjectHelper {
 
     }
 
-    public static Object getter(Object entity, String property) throws InvocationTargetException, IllegalAccessException {
+    private String getMethodName(String property) {
+        //property: "name"
+
+        // "get"+"N"+"ame"
+        return "get"+property.substring(0,1).toUpperCase()+property.substring(1);
+    }
+
+    public static Object getter(Object entity, String property) throws InvocationTargetException, IllegalAccessException, NoSuchMethodException {
         // Method // invoke
         Object result = null;
         Class theClass = entity.getClass();
         Method[] methods = theClass.getMethods();
+
+        //Method getter = theClass.getMethod(property, null);
+
+
+
 
         for(Method method : methods){
             if(isGetter(method)){

@@ -83,6 +83,7 @@ public class EmployeeDAOImpl implements IEmployeeDAO {
 
     public void deleteEmployee(int employeeID) {
         Employee employee = new Employee();
+        //employee.setID(employeeID);
         Session session = null;
         try {
             session = FactorySession.openSession();

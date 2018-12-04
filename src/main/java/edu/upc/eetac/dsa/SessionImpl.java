@@ -7,10 +7,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.*;
 
 
@@ -56,6 +53,14 @@ public class SessionImpl implements Session {
         }
     }
 
+    private String getFieldName(int i, ResultSet rs) throws SQLException {
+        ResultSetMetaData rsmd = rs.getMetaData();
+        String name = rsmd.getColumnName(i);
+
+        System.out.println("columna "+i+" name: "+name);
+        return name;
+    }
+
     public Object get(Class theClass, int ID) {
         String selectQuery = QueryHelper.createQuerySELECT2(theClass);
 
@@ -75,11 +80,16 @@ public class SessionImpl implements Session {
             pstm.setObject(1,ID);
             rs = pstm.executeQuery();
 
+
             while(rs.next()){
                 Field[] fields = theClass.getDeclaredFields();
                 rs.getString(1);
                 for (int i = 0; i<fields.length; i++){
-                    ObjectHelper.setter(entity, fields[i].getName(), rs.getObject(i + 2));
+
+
+                    String fieldName = this.getFieldName(i+2, rs);
+
+                    ObjectHelper.setter(entity, fieldName, rs.getObject(i + 2));
                 }
 
             }
@@ -184,10 +194,22 @@ public class SessionImpl implements Session {
         return listOfObjects;
     }
 
+
+    /*
+     *          HashMap params = new HashMap();
+     *          params.put("edat", new Condition("=", 15);
+     *          params.put("salary", new Condition(100000, ">=");
+     *          session.findAll(Employee.class, params);
+     *
+     *          SELECT * FROM Employee WHERE ( edat = 15 AND salary>=10000)
+     */
     public List<Object> findAll(Class theClass, HashMap params) {
         return null;
     }
 
+     /*
+             *          SELECT * FROM Employee, Deparment  WHERE ( edat = 15 AND salary>=10000)
+    */
     public List<Object> query(String query, Class theClass, HashMap params) {
         return null;
     }
